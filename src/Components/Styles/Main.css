@@ -1,19 +1,16 @@
 .main_container{
-    background: url("../../Utils/assets/background.png") no-repeat center center fixed;
+    background: url("../../Utils/assets/background.png") no-repeat;
     background-position: center;
     background-size: cover; 
     width: 100vw; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     height: 100vh; 
     overflow-y: hidden;
-    transition: margin-left .5s;
 }
-.image_container{
-  position: absolute;
-  left: 50%;
-  top:16%;
-  transform: translateX(-50%);
-  transition: transform 0.5s ease, left 0.5s ease;
-}
+
 .open_nav_btn, .open_nav_btn1 {
   position: fixed;
   z-index: 900;
@@ -95,10 +92,9 @@
 }
 .image_container1 {
   position: absolute;
-  left: 58%;
-  top: 16%;
+  left: 850px;
   transform: translateX(-35%);
-  transition: transform 0.5s ease, left 0.5s ease;
+  transition: left 0.9s ease;
 }
 .buddha_image{
   margin-right: 100;
@@ -106,19 +102,16 @@
   height:100
 }
 .read_more{
-  display: grid;
+  display: flex;
   margin-top: 3%;
   margin-bottom: 3%;
-  grid-template-columns: 10% 90%;
+
 
 }
-.read_more span:nth-child(1){
-font-size: 25px;
-color:#c55d37;
-}
-.read_more span:nth-child(2){
+
+.read_more span{
   font-size: 14px;
-  margin-top: 8px;
+  margin-top: 2px;
   color:#c55d37;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -190,15 +183,16 @@ color:#c55d37;
   box-shadow: 0 0 10px rgb(138, 126, 126);
   color:#da744e;
 }
-@media screen and (min-resolution: 120dpi) and (max-resolution: 130dpi) {
-  .image_container{
-    top:20%;
-  }
-  .image_container1{
-    top:20%;
-  }
-}
+
 @media screen and (max-height: 450px) {
   .sidenav { padding-top: 15px; }
   .sidenav a { font-size: 18px; }
+}
+@media(max-width:830px){
+  .image_container1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.9s ease;
+  }
 }

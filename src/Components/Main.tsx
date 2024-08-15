@@ -5,6 +5,7 @@ import { JSON_Data } from './JSON';
 const App = () => {
     const [state, setState] = useState(JSON_Data)
     const [isNavOpen, setIsNavOpen] = useState(false);
+    const[value,setValue]=useState(true)
     const openNav = () => {
         setIsNavOpen(!isNavOpen);
     
@@ -45,10 +46,10 @@ const App = () => {
                     ))}
                     <div>
                         <div className="description_title">Description</div>
-                        <div className="description">{state.Description}</div>
+                        <div className="description">{value?state.Description.slice(0,397):state.Description}</div>
                     </div>
-                    <div className='read_more'>
-                    <span>&rarr;</span> <span>Read More</span>
+                    <div className='read_more' onClick={()=>setValue(!value)}>
+                    <span>&rarr;{value?"Read More":"Read Less"}</span>
                     </div>
                     <div className='share_content_btns'>
                     <button>ADD TO COLLECTION</button>
