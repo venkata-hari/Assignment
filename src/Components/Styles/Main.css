@@ -90,11 +90,17 @@
   font-weight: 500;
   color: #1a19199d;
 }
+.image_container{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.2s ease, left 0.5s ease;
+}
 .image_container1 {
   position: absolute;
-  left: 850px;
+  left: 58%;
   transform: translateX(-35%);
-  transition: left 0.9s ease;
+  transition: transform 0.2s ease, left 0.5s ease;
 }
 .buddha_image{
   margin-right: 100;
