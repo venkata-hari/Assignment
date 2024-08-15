@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Styles/Main.css';
 import { Buddha } from '../Utils/assets/index';
-import DoubleArrow from '../Utils/Svgs/DoubleArrow';
 import { JSON_Data } from './JSON';
 const App = () => {
     const [state, setState] = useState(JSON_Data)
