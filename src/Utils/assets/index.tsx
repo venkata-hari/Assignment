@@ -1,0 +1,1 @@
+export const Buddha=require('./buddha.png')

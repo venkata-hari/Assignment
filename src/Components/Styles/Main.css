@@ -1,0 +1,203 @@
+.main_container{
+    background: url("../../Utils/assets/background.png") no-repeat center center fixed;
+    background-position: center;
+    background-size: cover; 
+    width: 100vw; 
+    height: 100vh; 
+    transition: margin-left .5s;
+}
+.image_container{
+  position: absolute;
+  left: 50%;
+  top:16%;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease, left 0.5s ease;
+}
+.open_nav_btn, .open_nav_btn1 {
+  position: fixed;
+  z-index: 900;
+  color: #da744e;
+  transition: transform 0.2s ease, left 0.5s ease;
+}
+
+.open_nav_btn {
+  top: 80px;
+  left: 320px;
+}
+
+.open_nav_btn1 {
+  top: 40px;
+  left: 20px; 
+}
+.title{
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+ letter-spacing: 3px;
+  font-size:22px;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+.details{
+  font-family: "Manrope", sans-serif;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.9;
+}
+.description_title{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 17px;
+  color:#1e1d1d;
+  font-weight: 600;
+}
+.description{
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  color:#343232;
+  opacity: 0.9;
+  line-height: 20px;
+  font-weight: 500;
+}
+.icons{
+  display: flex;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+.icons section div i{
+  color:#343232;
+ font-size: 23px;
+}
+.icons section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+  margin-right: 5%;
+}
+.icons section div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width:35px;
+  height:35px;
+  border-radius: 50%;
+  background-color: rgb(218, 210, 210);
+}
+.count{
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a19199d;
+}
+.image_container1 {
+  position: absolute;
+  left: 58%;
+  top: 16%;
+  transform: translateX(-35%);
+  transition: transform 0.5s ease, left 0.5s ease;
+}
+.buddha_image{
+  margin-right: 100;
+  width:100;
+  height:100
+}
+.read_more{
+  display: grid;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  grid-template-columns: 10% 90%;
+
+}
+.read_more span:nth-child(1){
+font-size: 25px;
+color:#c55d37;
+}
+.read_more span:nth-child(2){
+  font-size: 14px;
+  margin-top: 8px;
+  color:#c55d37;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f7f0f0;
+  overflow-y: scroll;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left:0;
+  margin-top: 10%;
+  margin-left: 5%;
+  width:40px;
+  height:40px;
+  background-color: rgb(228, 217, 217);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.sidenav .closebtn i{
+  font-size: 24px;
+  color:#da744e;
+}
+
+.sidenav::-webkit-scrollbar {
+  width: 8px;
+}
+
+.sidenav::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+.sidenav::-webkit-scrollbar-thumb {
+  background: #eccc6b; 
+  box-shadow: 0 0 3px rgb(245, 238, 238);
+}
+
+.sidenav::-webkit-scrollbar-thumb:hover {
+  background: #f1b706;  
+}
+.share_content_btns button{
+  padding:10px;
+ font-weight: 600;
+ margin-right: 3%;
+}
+.share_content_btns button:nth-child(1){
+  background-color: #da744e;
+  border: none;
+  box-shadow: 0 0 10px rgb(138, 126, 126);
+  color:white;
+}
+.share_content_btns button:nth-child(2){
+  border: 1.1px solid #da744e;
+
+  box-shadow: 0 0 10px rgb(138, 126, 126);
+  color:#da744e;
+}
+@media screen and (min-resolution: 120dpi) and (max-resolution: 130dpi) {
+  .image_container{
+    top:20%;
+  }
+  .image_container1{
+    top:20%;
+  }
+}
+@media screen and (max-height: 450px) {
+  .sidenav { padding-top: 15px; }
+  .sidenav a { font-size: 18px; }
+}
